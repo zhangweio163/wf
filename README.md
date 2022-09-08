@@ -1,4 +1,11 @@
 # wf
+支持参数：  
+服务模块：go run server.go -name 服务名称 -port 服务端口号 -reg 注册中心服务地址  
+  
+注册中心模块:go run RegServer.go -http 注册中心http服务端口 -port 注册中心服务端口  
+  
+客户端模块 ： go run main.go -name 需调用服务名称(注册中心注册服务名称) -port 客户端http端口 -reg 注册中心服务地址
+  
 一个可以动态扩展服务的项目，目前情况如下图  
 ![image](1.png)  
 未完成：  
